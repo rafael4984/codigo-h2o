@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código H₂O - Proyecto Educativo STEAM</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/logo/logo-proyecto.png" alt="Logo Código H2O">
+        <span class="brand-name text-gradient">Código H₂O</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="pages/encuesta.html" class="nav-link">Encuesta</a></li>
+          <li><a href="pages/prototipo.html" class="nav-link">Prototipo</a></li>
+          <li><a href="pages/mediciones.html" class="nav-link">Mediciones</a></li>
+          <li><a href="pages/galeria.html" class="nav-link">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HERO / PORTADA -->
+  <section class="hero-section">
+    <div class="section-container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge">💧 Proyecto Educativo STEAM</span>
+        <h1 class="hero-title">Código <span class="text-gradient">H₂O</span></h1>
+        <p class="hero-subtitle">Una pregunta, una comunidad y un proyecto que nos llevó a investigar, construir y aprender.</p>
+        
+        <div class="hero-meta">
+          <p><strong>6.º año – Bachiller en Programación y Robótica</strong></p>
+          <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento”</p>
+          <p>La Paz, Entre Ríos</p>
+        </div>
+      </div>
+
+      <div class="hero-logo-box">
+        <img src="assets/logo/logo-proyecto.png" alt="Logo Código H2O destacado">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ¿QUÉ ES CÓDIGO H2O? -->
+  <section class="section-container">
+    <div class="card-tech">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué es <span class="text-gradient">Código H₂O</span>?</h2>
+      </div>
+      <p><strong>Código H₂O</strong> es un proyecto educativo interdisciplinario desarrollado por estudiantes de 6.º año del Bachiller en Programación y Robótica de la Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento”, de la ciudad de La Paz, Entre Ríos.</p>
+      <br>
+      <p>El proyecto surgió a partir de nuestras inquietudes sobre la calidad del agua que consumimos en nuestra comunidad. A partir de esa pregunta comenzamos un recorrido de investigación, experimentación y construcción tecnológica.</p>
+      <br>
+      <p>Investigamos, encuestamos a la comunidad, analizamos muestras de agua, conocimos cómo funciona una planta potabilizadora, recibimos información del Área de Bromatología y desarrollamos un prototipo basado en Arduino para monitorear parámetros relacionados con la calidad del agua.</p>
+      <br>
+      <p>Código H₂O no fue solamente construir un prototipo: fue aprender, investigar y buscar respuestas a una problemática de nuestro entorno.</p>
+    </div>
+  </section>
+
+  <!-- 3. ¿QUIÉNES SOMOS? -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="card-tech">
+        <img src="assets/logo/equipo.jpg" alt="Equipo de estudiantes de Código H2O" class="school-card-img">
+        <h3>Nuestro Equipo de Trabajo</h3>
+        <p>Estudiantes de 6.º año impulsando la investigación y tecnología en nuestra ciudad.</p>
+      </div>
+
+      <div class="card-tech">
+        <h3>Aprender construyendo</h3>
+        <br>
+        <p>Somos estudiantes del Bachiller en Programación y Robótica de la Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento”. Durante el proyecto trabajamos de manera colaborativa, combinando conocimientos de programación, electrónica, ciencias naturales, matemática, comunicación y otras áreas para investigar una problemática de nuestra comunidad.</p>
+        
+        <div class="course-badge">
+          <img src="assets/logo/logo-programacion.png" alt="Especialidad Programación y Robótica">
+          <div>
+            <strong>6.º Año Bachiller</strong>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Programación y Robótica</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. NUESTRA CIUDAD -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">La Paz, Entre Ríos</h2>
+      <p class="section-subtitle">El proyecto fue desarrollado en nuestra ciudad, abordando una problemática vinculada directamente con nuestro entorno hídrico.</p>
+    </div>
+
+    <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.825227367801!2d-59.648118!3d-30.748366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95B3033D2D1B3209%3A0x8849E8687D0C92F3!2sLa%20Paz%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <div style="text-align: center; margin-top: 25px;">
+      <a href="https://maps.app.goo.gl/FAAgcc5ZJ1zTg21j7" target="_blank" class="btn-secondary">
+        📍 Ver ubicación en Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- 5 & 6. ¿CÓMO SURGIÓ LA IDEA? Y NUESTRO RECORRIDO -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">¿Cómo surgió y cómo fue nuestro recorrido?</h2>
+      <p class="section-subtitle">De una pregunta nació una investigación en etapas consecutivas.</p>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🔎</span>
+        <h3>1. Investigación</h3>
+        <p>Investigamos la problemática del agua y buscamos información de contexto.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🗣️</span>
+        <h3>2. Comunidad</h3>
+        <p>Realizamos encuestas y conocimos las inquietudes reales de la población.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🧪</span>
+        <h3>3. Experimentación</h3>
+        <p>Analizamos diferentes muestras de agua y estudiamos distintos parámetros.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🏭</span>
+        <h3>4. Visita a OSMSE</h3>
+        <p>Conocimos la Planta Potabilizadora de Santa Elena y aprendimos sobre el proceso de tratamiento.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🧑‍🔬</span>
+        <h3>5. Bromatología</h3>
+        <p>Charla con el Área de Bromatología de La Paz sobre controles de calidad.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">🤖</span>
+        <h3>6. Tecnología</h3>
+        <p>Diseñamos y construimos nuestro prototipo basado en la plataforma Arduino.</p>
+      </div>
+
+      <div class="card-tech timeline-card">
+        <span class="timeline-icon">📢</span>
+        <h3>7. Difusión</h3>
+        <p>Elaboramos folletos y afiches para compartir lo aprendido con los vecinos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. DOCUMENTACIÓN DEL PROYECTO -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">Conocé nuestro proyecto</h2>
+      <p class="section-subtitle">Accedé a los documentos de investigación oficiales elaborados por los estudiantes.</p>
+    </div>
+
+    <div class="docs-grid">
+      <!-- Documento 1 -->
+      <div class="card-tech doc-card">
+        <div>
+          <img src="assets/icons/portadacampo.png" alt="Carpeta de campo" class="doc-cover">
+          <h3>Carpeta de campo</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 10px 0 20px 0;">Registro detallado del proceso, observaciones y notas tomadas día a día.</p>
+        </div>
+        <a href="assets/docs/carpetacampo.pdf" target="_blank" class="btn-primary">Ver documento</a>
+      </div>
+
+      <!-- Documento 2 -->
+      <div class="card-tech doc-card">
+        <div>
+          <img src="assets/icons/portadapedagogico.png" alt="Registro pedagógico" class="doc-cover">
+          <h3>Registro pedagógico</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 10px 0 20px 0;">Acompañamiento docente y sistematización de aprendizajes interdisciplinarios.</p>
+        </div>
+        <a href="assets/docs/registropedagogico.pdf" target="_blank" class="btn-primary">Ver documento</a>
+      </div>
+
+      <!-- Documento 3 -->
+      <div class="card-tech doc-card">
+        <div>
+          <img src="assets/icons/portadaproyecto.png" alt="Informe del proyecto" class="doc-cover">
+          <h3>Informe del proyecto</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin: 10px 0 20px 0;">Documento formal que resume las conclusiones, fundamentos y funcionamiento.</p>
+        </div>
+        <a href="assets/docs/informe.pdf" target="_blank" class="btn-primary">Ver documento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. VIDEO DEL PROYECTO -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">Código H₂O en acción</h2>
+      <p class="section-subtitle">Conocé parte del trabajo que realizamos durante el proyecto.</p>
+    </div>
+
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/35GMi5Q-YSw" title="Video Código H2O" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- 9. CIERRE DEL INDEX -->
+  <section class="section-container">
+    <div class="card-tech closure-box">
+      <h2>Una pregunta nos llevó mucho más lejos</h2>
+      <br>
+      <p>Código H₂O comenzó con una pregunta sobre el agua y terminó convirtiéndose en una experiencia de investigación, tecnología y aprendizaje compartido.</p>
+      <p>Porque cuando investigamos nuestra realidad, también descubrimos todo lo que somos capaces de construir.</p>
+      
+      <img src="assets/logo/logo-proyecto.png" alt="Logo Código H2O" class="closure-logo">
+      <p class="closure-phrase">“Cuidar el agua hoy es programar un mejor mañana.”</p>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>Código H₂O - 6.º Año Bachiller en Programación y Robótica</p>
+    <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento” | La Paz, Entre Ríos</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

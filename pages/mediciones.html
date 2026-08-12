@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediciones del Agua - Código H₂O</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <img src="../assets/logo/logo-proyecto.png" alt="Logo Código H2O">
+        <span class="brand-name text-gradient">Código H₂O</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="encuesta.html" class="nav-link">Encuesta</a></li>
+          <li><a href="prototipo.html" class="nav-link">Prototipo</a></li>
+          <li><a href="mediciones.html" class="nav-link active">Mediciones</a></li>
+          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HERO / PORTADA -->
+  <section class="hero-section hero-mediciones">
+    <div class="section-container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge">🔬 Laboratorio & Monitoreo</span>
+        <h1 class="hero-title">¿Qué podemos <span class="text-gradient">medir</span> en el agua?</h1>
+        <p class="hero-subtitle">Durante nuestro proyecto realizamos diferentes mediciones para conocer algunas características del agua y comprender mejor su calidad.</p>
+      </div>
+
+      <div class="hero-graphic-box">
+        <div class="sensor-chip-badge">
+          <span class="sensor-icon">💧</span>
+          <div>
+            <strong>Muestras de Agua</strong>
+            <p>Monitoreo físico-químico</p>
+          </div>
+        </div>
+        <div class="sensor-chip-badge">
+          <span class="sensor-icon">📟</span>
+          <div>
+            <strong>Sensado Electrónico</strong>
+            <p>Captura de datos en tiempo real</p>
+          </div>
+        </div>
+        <div class="sensor-chip-badge">
+          <span class="sensor-icon">📊</span>
+          <div>
+            <strong>Análisis Científico</strong>
+            <p>Estudio de parámetros clave</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ¿POR QUÉ MEDIMOS EL AGUA? -->
+  <section class="section-container">
+    <div class="card-tech why-measure-card">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué <span class="text-gradient">medimos</span> el agua?</h2>
+      </div>
+      <p class="text-lead">Para estudiar las muestras de agua no alcanza solamente con observar su color o aspecto. Existen características que pueden medirse mediante instrumentos y que nos permiten obtener información que no siempre podemos detectar a simple vista.</p>
+      <p class="text-sub">Durante nuestro proyecto trabajamos con diferentes parámetros. Entre ellos estudiamos el <strong>pH</strong> y los <strong>sólidos disueltos totales (TDS)</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 3 & 4. SECCIÓN pH Y ESCALA -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">💧 ¿Qué es el <span class="text-gradient">pH</span>?</h2>
+      <p class="section-subtitle">El pH es una medida que nos permite conocer si una sustancia es ácida, neutra o básica (alcalina). La escala de pH generalmente va de 0 a 14.</p>
+    </div>
+
+    <!-- Indicadores Básicos de pH -->
+    <div class="ph-indicators-grid">
+      <div class="card-tech ph-indicator-card acid">
+        <span class="ph-range-badge">&lt; 7</span>
+        <h3>Ácido</h3>
+        <p>Sustancias con mayor concentración de iones de hidrógeno.</p>
+      </div>
+      <div class="card-tech ph-indicator-card neutral">
+        <span class="ph-range-badge">= 7</span>
+        <h3>Neutro</h3>
+        <p>Punto de equilibrio químico (p. ej. agua pura a 25 °C).</p>
+      </div>
+      <div class="card-tech ph-indicator-card basic">
+        <span class="ph-range-badge">&gt; 7</span>
+        <h3>Básico / Alcalino</h3>
+        <p>Sustancias con menor concentración de acidez.</p>
+      </div>
+    </div>
+
+    <!-- Escala Visual e Imagen -->
+    <div class="card-tech ph-main-display">
+      <div class="ph-display-grid">
+        <div class="ph-img-container" onclick="openLightboxImage('../assets/mediciones/ph.jpg', 'Escala de pH - Gráfico de referencia')">
+          <img src="../assets/mediciones/ph.jpg" alt="Escala de pH" class="img-zoomable" loading="lazy">
+          <span class="img-hint-badge">🔍 Clic para ampliar</span>
+        </div>
+
+        <div class="ph-info-content">
+          <h3>La escala de pH</h3>
+          <p>La escala permite comparar el nivel de acidez o alcalinidad de diferentes sustancias de manera rápida e intuitiva.</p>
+
+          <!-- Escala Visual HTML/CSS -->
+          <div class="ph-visual-scale-wrapper">
+            <div class="ph-gradient-bar"></div>
+            <div class="ph-scale-labels">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. ¿POR QUÉ ES IMPORTANTE EL pH? -->
+    <div class="card-tech ph-importance-card">
+      <div class="importance-header">
+        <span class="importance-icon">💡</span>
+        <h3>¿Por qué lo medimos?</h3>
+      </div>
+      <p>Medir el pH nos permite conocer una de las características químicas del agua y comparar diferentes muestras.</p>
+      <div class="disclaimer-note">
+        <strong>Aclaración importante:</strong> El pH por sí solo no permite determinar si un agua es potable o segura para consumir.
+      </div>
+    </div>
+  </section>
+
+  <!-- 6, 7 & 8. SECCIÓN TDS -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">🔬 ¿Qué es el <span class="text-gradient">TDS</span>?</h2>
+      <p class="section-subtitle">TDS significa <em>Total Dissolved Solids</em> (Sólidos Disueltos Totales). Es una medida que indica aproximadamente la cantidad de sustancias disueltas presentes en el agua, como sales, minerales y otros compuestos.</p>
+    </div>
+
+    <div class="card-tech tds-main-display">
+      <div class="tds-display-grid">
+        <div class="tds-img-container" onclick="openLightboxImage('../assets/mediciones/tds.jpg', 'Medidor de TDS sumergido en muestra de agua')">
+          <img src="../assets/mediciones/tds.jpg" alt="Medidor de TDS en vaso con agua" class="img-zoomable" loading="lazy">
+          <span class="img-hint-badge"></span>
+        </div>
+
+        <div class="tds-info-content">
+          <h3>¿Cómo medimos el TDS?</h3>
+          <p>Para realizar este tipo de medición utilizamos un medidor de TDS, que se introduce en la muestra de agua y permite obtener una lectura directa.</p>
+
+          <!-- Diagrama de Flujo TDS -->
+          <div class="tds-flow-diagram">
+            <div class="flow-box">
+              <span class="flow-icon">🥛</span>
+              <span>Muestra de agua</span>
+            </div>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-box">
+              <span class="flow-icon">🖊️</span>
+              <span>Medidor TDS</span>
+            </div>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-box">
+              <span class="flow-icon">📲</span>
+              <span>Lectura</span>
+            </div>
+            <span class="flow-arrow">↓</span>
+            <div class="flow-box highlight-flow">
+              <span class="flow-icon">🔢</span>
+              <span>Valor de TDS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-tech tds-educational-card">
+      <h3>¿Qué nos dice el TDS?</h3>
+      <p class="text-lead">Un valor de TDS más alto indica una mayor cantidad de sustancias disueltas en el agua, pero el valor de TDS por sí solo no permite determinar si el agua es potable o no.</p>
+      
+      <div class="tds-bullets-grid">
+        <div class="tds-bullet-item">
+          <span class="bullet-icon">❌</span>
+          <p><strong>No identifica exactamente</strong> qué sustancias específicas están presentes en la muestra.</p>
+        </div>
+        <div class="tds-bullet-item">
+          <span class="bullet-icon">🧪</span>
+          <p><strong>No reemplaza</strong> un análisis de laboratorio físico-químico y bacteriológico completo.</p>
+        </div>
+        <div class="tds-bullet-item">
+          <span class="bullet-icon">⚖️</span>
+          <p><strong>Es útil para comparar</strong> diferentes muestras y observar variaciones en la concentración disuelta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. pH Y TDS: DOS MEDICIONES DIFERENTES -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">No miden lo mismo</h2>
+      <p class="section-subtitle">Aunque ambos evalúan la muestra, analizan propiedades completamente independientes.</p>
+    </div>
+
+    <div class="comparison-grid">
+      <div class="card-tech comparison-card">
+        <div class="comparison-badge ph-badge">💧 pH</div>
+        <h3>¿Qué mide?</h3>
+        <p>Indica si el agua presenta características ácidas, neutras o básicas según su concentración iónica.</p>
+      </div>
+
+      <div class="card-tech comparison-card">
+        <div class="comparison-badge tds-badge">🧪 TDS</div>
+        <h3>¿Qué mide?</h3>
+        <p>Indica aproximadamente la cantidad total de sustancias y minerales disueltos presentes en el agua.</p>
+      </div>
+    </div>
+
+    <div class="card-tech comparison-conclusion">
+      <span class="conclusion-icon">✨</span>
+      <p><strong>Ambas mediciones nos brindan información diferente sobre una misma muestra de agua.</strong></p>
+    </div>
+  </section>
+
+  <!-- 10. NUESTRAS MEDICIONES -->
+  <section class="section-container">
+    <div class="card-tech our-measurements-box">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué hicimos nosotros?</h2>
+      </div>
+      <p class="text-lead">Durante el proyecto analizamos diferentes muestras de agua y registramos distintos parámetros. Entre ellos, utilizamos mediciones de pH, TDS, conductividad eléctrica y temperatura.</p>
+
+      <!-- Esquema Visual del Proyecto -->
+      <div class="project-tree-wrapper">
+        <div class="tree-root">
+          <span class="tree-icon">💧</span>
+          <strong>MUESTRA DE AGUA</strong>
+        </div>
+
+        <div class="tree-line-vertical"></div>
+
+        <div class="tree-branches">
+          <div class="tree-node">
+            <span class="node-icon">🧪</span>
+            <span>pH</span>
+          </div>
+          <div class="tree-node">
+            <span class="node-icon">🔍</span>
+            <span>TDS</span>
+            <div class="sub-branch-line"></div>
+            <div class="tree-node sub-node">
+              <span class="node-icon">⚡</span>
+              <span>Conductividad</span>
+            </div>
+          </div>
+          <div class="tree-node">
+            <span class="node-icon">🌡️</span>
+            <span>Temperatura</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ADVERTENCIA FINAL -->
+  <section class="section-container">
+    <div class="card-tech warning-card">
+      <div class="warning-header">
+        <span class="warning-icon">⚠️</span>
+        <h2>Una medición no es un análisis de potabilidad</h2>
+      </div>
+      <p>Las mediciones realizadas durante nuestro proyecto tienen una finalidad educativa y de monitoreo. Estos parámetros permiten conocer algunas características del agua, pero no reemplazan los análisis físico-químicos y bacteriológicos realizados por laboratorios especializados.</p>
+    </div>
+  </section>
+
+  <!-- MODAL / LIGHTBOX PARA AMPLIAR IMÁGENES -->
+  <div id="survey-lightbox" class="lightbox-modal">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-container">
+      <img id="lightbox-img" src="" alt="Imagen ampliada">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>Código H₂O - 6.º Año Bachiller en Programación y Robótica</p>
+    <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento” | La Paz, Entre Ríos</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

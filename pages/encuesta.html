@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta a la Comunidad - Código H₂O</title>
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <img src="../assets/logo/logo-proyecto.png" alt="Logo Código H2O">
+        <span class="brand-name text-gradient">Código H₂O</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="encuesta.html" class="nav-link active">Encuesta</a></li>
+          <li><a href="prototipo.html" class="nav-link">Prototipo</a></li>
+          <li><a href="mediciones.html" class="nav-link">Mediciones</a></li>
+          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HERO / PORTADA -->
+  <section class="hero-section hero-survey">
+    <div class="section-container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge">📊 Consulta Ciudadana</span>
+        <h1 class="hero-title">¿Qué piensa nuestra <span class="text-gradient">comunidad</span> sobre el agua?</h1>
+        <p class="hero-subtitle">Para conocer las inquietudes, percepciones y hábitos de nuestra comunidad, realizamos una encuesta sobre el agua que consumimos diariamente en La Paz, Entre Ríos.</p>
+        
+        <div class="hero-meta">
+          <p><strong>Recopilación de datos reales en la ciudad de La Paz</strong></p>
+          <p>Fundamento empírico para el desarrollo del prototipo Código H₂O</p>
+        </div>
+      </div>
+
+      <div class="hero-graphic-box">
+        <div class="stat-bubble bubble-1">
+          <span class="bubble-icon">💧</span>
+          <div>
+            <strong>Percepción Hídrica</strong>
+            <p>Hábitos y consumo</p>
+          </div>
+        </div>
+        <div class="stat-bubble bubble-2">
+          <span class="bubble-icon">📋</span>
+          <div>
+            <strong>16 Indicadores</strong>
+            <p>Preguntas evaluadas</p>
+          </div>
+        </div>
+        <div class="stat-bubble bubble-3">
+          <span class="bubble-icon">🔬</span>
+          <div>
+            <strong>Interés Técnico</strong>
+            <p>Aceptación del prototipo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ¿POR QUÉ REALIZAMOS LA ENCUESTA? -->
+  <section class="section-container">
+    <div class="card-tech">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué realizamos la <span class="text-gradient">encuesta</span>?</h2>
+      </div>
+      <p class="text-lead">Antes de diseñar y construir nuestro prototipo tecnológico, necesitábamos conocer qué pensaban las personas de nuestra ciudad sobre el agua que consumen diariamente. Por eso decidimos realizar una encuesta a la comunidad: para conocer sus experiencias, preocupaciones y nivel de conocimiento sobre la calidad del recurso hídrico.</p>
+      
+      <div class="guided-questions-container">
+        <h3>Ejes y preguntas guía de la investigación:</h3>
+        <div class="questions-grid">
+          <div class="question-chip">💧 ¿Qué tipo de agua consume habitualmente en su hogar?</div>
+          <div class="question-chip">⭐ ¿Cómo considera la calidad del agua de la red?</div>
+          <div class="question-chip">👁️ ¿Ha observado cambios de color, olor o sabor en el agua?</div>
+          <div class="question-chip">⚠️ ¿Qué situaciones relacionadas con el agua le generan mayor preocupación?</div>
+          <div class="question-chip">🧬 ¿Conoce qué son los microplásticos y sus efectos?</div>
+          <div class="question-chip">🤖 ¿Utilizaría una herramienta tecnológica para conocer los parámetros del agua?</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ¿CÓMO REALIZAMOS LA ENCUESTA? -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">¿Cómo realizamos el relevamiento?</h2>
+      <p class="section-subtitle">Sistematización metodológica del proceso de recolección de datos.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="card-tech process-card">
+        <div class="process-icon">📱</div>
+        <h3>Google Forms</h3>
+        <p>Diseñamos un formulario digital estructurado con preguntas de opción múltiple y escalas de valoración para facilitar el volcado de respuestas.</p>
+      </div>
+
+      <div class="card-tech process-card">
+        <div class="process-icon">👥</div>
+        <h3>Participación Abierta</h3>
+        <p>Convocamos a vecinos de diversos barrios e instituciones de La Paz, logrando una muestra representativa de la población local.</p>
+      </div>
+
+      <div class="card-tech process-card">
+        <div class="process-icon">📊</div>
+        <h3>Procesamiento</h3>
+        <p>Las respuestas fueron recopiladas automáticamente y posteriormente consolidadas en 16 gráficos estadísticos para su posterior análisis.</p>
+      </div>
+    </div>
+
+    <!-- Espacio preparado para indicar la cantidad real de participantes -->
+    <div class="card-tech sample-size-box">
+      <div class="sample-content">
+        <span class="sample-badge">Muestra Relevada</span>
+        <div class="sample-number">[52]</div>
+        <p class="sample-description">Vecinos de la comunidad de La Paz, Entre Ríos, aportaron sus respuestas para dar forma a este estudio empírico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. RESULTADOS DESTACADOS -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">¿Qué descubrimos?</h2>
+      <p class="section-subtitle">Hallazgos clave obtenidos directamente del análisis de las 16 métricas de la encuesta.</p>
+    </div>
+
+    <div class="highlights-grid">
+      <div class="card-tech highlight-card">
+        <div class="highlight-header">
+          <span class="highlight-icon">❓</span>
+          <h3>Percepción de la Calidad</h3>
+        </div>
+        <p>Existe una marcada variabilidad en la confianza sobre el agua de red. Un porcentaje significativo de la población presenta dudas respecto a la pureza y tratamiento del agua que llega a sus hogares.</p>
+      </div>
+
+      <div class="card-tech highlight-card">
+        <div class="highlight-header">
+          <span class="highlight-icon">⚠️</span>
+          <h3>Preocupación por Contaminación</h3>
+        </div>
+        <p>La presencia de residuos, la turbidez eventual y la posible contaminación ambiental figuran entre las principales inquietudes planteadas por los vecinos encuestados.</p>
+      </div>
+
+      <div class="card-tech highlight-card">
+        <div class="highlight-header">
+          <span class="highlight-icon">🚰</span>
+          <h3>Cambios Organolépticos</h3>
+        </div>
+        <p>Múltiples respuestas señalaron haber detectado variaciones periódicas en las características organolépticas del agua (alteraciones apreciables en sabor, olor o coloración).</p>
+      </div>
+
+      <div class="card-tech highlight-card">
+        <div class="highlight-header">
+          <span class="highlight-icon">💡</span>
+          <h3>Aceptación de Soluciones STEAM</h3>
+        </div>
+        <p>La comunidad manifestó una alta predisposición a contar con dispositivos interactivos o sensores en tiempo real que permitan verificar la calidad del agua de consumo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GALERÍA DE RESULTADOS -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">Todos los resultados</h2>
+      <p class="section-subtitle">Explorá los 16 gráficos estadísticos obtenidos. Hacé clic sobre cualquiera de ellos para ampliar la vista.</p>
+    </div>
+
+    <div class="survey-gallery-grid">
+      <!-- Tarjeta 01 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(0)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (1).png" alt="Resultado de Encuesta 01" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 01</span>
+          <h4>Métrica 01</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 02 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(1)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (2).png" alt="Resultado de Encuesta 02" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 02</span>
+          <h4>Métrica 02</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 03 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(2)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (3).png" alt="Resultado de Encuesta 03" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 03</span>
+          <h4>Métrica 03</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 04 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(3)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (4).png" alt="Resultado de Encuesta 04" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 04</span>
+          <h4>Métrica 04</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 05 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(4)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (5).png" alt="Resultado de Encuesta 05" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 05</span>
+          <h4>Métrica 05</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 06 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(5)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (6).png" alt="Resultado de Encuesta 06" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 06</span>
+          <h4>Métrica 06</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 07 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(6)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (7).png" alt="Resultado de Encuesta 07" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 07</span>
+          <h4>Métrica 07</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 08 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(7)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (8).png" alt="Resultado de Encuesta 08" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 08</span>
+          <h4>Métrica 08</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 09 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(8)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (9).png" alt="Resultado de Encuesta 09" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 09</span>
+          <h4>Métrica 09</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 10 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(9)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (10).png" alt="Resultado de Encuesta 10" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 10</span>
+          <h4>Métrica 10</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 11 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(10)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (11).png" alt="Resultado de Encuesta 11" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 11</span>
+          <h4>Métrica 11</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 12 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(11)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (12).png" alt="Resultado de Encuesta 12" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 12</span>
+          <h4>Métrica 12</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 13 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(12)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (13).png" alt="Resultado de Encuesta 13" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 13</span>
+          <h4>Métrica 13</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 14 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(13)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (14).png" alt="Resultado de Encuesta 14" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 14</span>
+          <h4>Métrica 14</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 15 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(14)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (15).png" alt="Resultado de Encuesta 15" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 15</span>
+          <h4>Métrica 15</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+
+      <!-- Tarjeta 16 -->
+      <div class="card-tech gallery-card" onclick="openLightbox(15)">
+        <div class="gallery-img-wrapper">
+          <img src="../assets/encuesta/encuesta (16).png" alt="Resultado de Encuesta 16" loading="lazy">
+        </div>
+        <div class="gallery-card-info">
+          <span class="result-number">Resultado 16</span>
+          <h4>Métrica 16</h4>
+          <p>Haz clic para ampliar y examinar este gráfico en detalle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL / LIGHTBOX PARA VISUALIZACIÓN AMPLIADA -->
+  <div id="survey-lightbox" class="lightbox-modal">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <button class="lightbox-btn lightbox-prev" onclick="changeLightboxImage(-1)" aria-label="Imagen anterior">&#10094;</button>
+    
+    <div class="lightbox-container">
+      <img id="lightbox-img" src="" alt="Gráfico ampliado">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+    
+    <button class="lightbox-btn lightbox-next" onclick="changeLightboxImage(1)" aria-label="Siguiente imagen">&#10095;</button>
+  </div>
+
+  <!-- 6. ¿QUÉ NOS APORTÓ LA ENCUESTA? -->
+  <section class="section-container">
+    <div class="card-tech reflection-box">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué aprendimos de las <span class="text-gradient">respuestas</span>?</h2>
+      </div>
+      <p class="text-lead">Analizar estas respuestas nos permitió trascender la teoría y validar el proyecto frente a las vivencias reales de La Paz:</p>
+      
+      <ul class="reflection-list">
+        <li><strong>Validación Comunitaria:</strong> Confirmamos que la preocupación por el agua es una temática vigente y prioritaria para las familias de nuestro entorno.</li>
+        <li><strong>Detección de Patrones:</strong> Identificamos que las variaciones periódicas en el agua generan incertidumbre cuando no se cuenta con datos cuantitativos.</li>
+        <li><strong>Apertura al Conocimiento:</strong> Notamos la necesidad de informar a la población sobre problemas emergentes como la presencia de microplásticos.</li>
+        <li><strong>Justificación Técnica:</strong> Se constató que existe un interés directo por disponer de instrumentación accesible que monitoree la calidad del agua.</li>
+      </ul>
+
+      <div class="reflection-conclusion">
+        <p>Las respuestas obtenidas fueron uno de los puntos de partida clave para continuar nuestra investigación, ayudándonos a definir qué aspectos debíamos profundizar en las siguientes fases metodológicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONEXIÓN CON EL RESTO DEL PROYECTO -->
+  <section class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">De las preguntas a la investigación</h2>
+      <p class="section-subtitle">La encuesta fue el primer paso dentro de un recorrido interdisciplinario integrado.</p>
+    </div>
+
+    <div class="flow-container card-tech">
+      <div class="flow-step">
+        <span class="flow-icon">📊</span>
+        <span>Encuesta</span>
+      </div>
+      <span class="flow-arrow">➔</span>
+      
+      <div class="flow-step">
+        <span class="flow-icon">🔎</span>
+        <span>Investigación</span>
+      </div>
+      <span class="flow-arrow">➔</span>
+
+      <div class="flow-step">
+        <span class="flow-icon">🧪</span>
+        <span>Análisis Muestras</span>
+      </div>
+      <span class="flow-arrow">➔</span>
+
+      <div class="flow-step">
+        <span class="flow-icon">🧑‍🔬</span>
+        <span>Bromatología</span>
+      </div>
+      <span class="flow-arrow">➔</span>
+
+      <div class="flow-step">
+        <span class="flow-icon">🏭</span>
+        <span>Planta Potabilizadora</span>
+      </div>
+      <span class="flow-arrow">➔</span>
+
+      <div class="flow-step active-step">
+        <span class="flow-icon">🤖</span>
+        <span>Prototipo</span>
+      </div>
+    </div>
+
+    <div class="flow-cta">
+      <a href="prototipo.html" class="btn-primary">Conocé nuestro prototipo ➔</a>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>Código H₂O - 6.º Año Bachiller en Programación y Robótica</p>
+    <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento” | La Paz, Entre Ríos</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

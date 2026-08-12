@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prototipo - Código H₂O</title>
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/prototipo.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <img src="../assets/logo/logo-proyecto.png" alt="Logo Código H2O">
+        <span class="brand-name text-gradient">Código H₂O</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="encuesta.html" class="nav-link">Encuesta</a></li>
+          <li><a href="prototipo.html" class="nav-link active">Prototipo</a></li>
+          <li><a href="mediciones.html" class="nav-link">Mediciones</a></li>
+          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL: PROTOTIPO -->
+  <main class="section-container prototipo-main">
+    
+    <!-- Encabezado de Sección -->
+    <div class="section-header">
+      <h1 class="section-title">Nuestro <span class="text-gradient">Prototipo</span></h1>
+      <p class="section-subtitle">Diseño, arquitectura del sistema y esquema electrónico desarrollado para el filtrado y monitoreo de agua.</p>
+    </div>
+
+    <!-- 1. Estructura y Partes del Prototipo -->
+    <section class="prototipo-section">
+      <div class="card-tech grid-2-cols">
+        <div class="prototipo-img-container">
+          <img src="../assets/prototipo/prototipo.png" alt="Estructura y partes del prototipo Código H2O" class="prototipo-img">
+        </div>
+        <div class="prototipo-info">
+          <h2>Estructura Física y Módulos</h2>
+          <p>El prototipo consta de dos módulos principales integrados en una estructura funcional diseñada para procesar y analizar la muestra de agua:</p>
+          
+          <ul class="prototipo-list">
+            <li>
+              <strong>Filtro Multicapa:</strong> Sistema de purificación física que utiliza capas superpuestas de grava, arena y algodón para retener sedimentos y micropartículas.
+            </li>
+            <li>
+              <strong>Recipientes Recolectores:</strong> Cámaras para el almacenamiento del agua prefiltrada y recolección de muestras listas para análisis.
+            </li>
+            <li>
+              <strong>Sensores de pH y Turbidez:</strong> Módulo analítico sumergido en la cámara de prueba que toma lecturas fisicoquímicas continuas.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Circuito y Componentes Electrónicos -->
+    <section class="prototipo-section">
+      <div class="card-tech grid-2-cols reverse-on-mobile">
+        <div class="prototipo-info">
+          <h2>Circuito Electrónico y Control</h2>
+          <p>La automatización y medición en tiempo real están gestionadas por una arquitectura electrónica basada en la plataforma Arduino:</p>
+          
+          <ul class="prototipo-list">
+            <li>
+              <strong>Arduino UNO:</strong> Microcontrolador principal encargado de procesar las señales analógicas de los sensores y ejecutar la lógica de control.
+            </li>
+            <li>
+              <strong>Sensor de pH:</strong> Electrodo analógico que mide los niveles de acidez o alcalinidad de la muestra de agua.
+            </li>
+            <li>
+              <strong>Sensor de Turbidez:</strong> Módulo óptico que determina la claridad y presencia de sólidos en suspensión.
+            </li>
+            <li>
+              <strong>Relé de 1 Vía:</strong> Módulo de conmutación electromecánica que actúa como interruptor digital para la bomba.
+            </li>
+            <li>
+              <strong>Bomba de Agua 5V:</strong> Actuador hidráulico encargado del flujo y transporte automatizado del agua a través del sistema.
+            </li>
+          </ul>
+        </div>
+        <div class="prototipo-img-container">
+          <img src="../assets/prototipo/circuito.png" alt="Esquema del circuito electrónico en Arduino" class="prototipo-img">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>Código H₂O - 6.º Año Bachiller en Programación y Robótica</p>
+    <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento” | La Paz, Entre Ríos</p>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

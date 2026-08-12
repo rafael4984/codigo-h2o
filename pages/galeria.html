@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Código H₂O</title>
+  
+  <!-- Estilos CSS (salen de /pages para buscar en /css) -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <img src="../assets/logo/logo-proyecto.png" alt="Logo Código H2O">
+        <span class="brand-name text-gradient">Código H₂O</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="encuesta.html" class="nav-link">Encuesta</a></li>
+          <li><a href="prototipo.html" class="nav-link">Prototipo</a></li>
+          <li><a href="mediciones.html" class="nav-link">Mediciones</a></li>
+          <li><a href="galeria.html" class="nav-link active">Galería</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL: GALERÍA -->
+  <main class="section-container galeria-main">
+    <div class="section-header">
+      <h1 class="section-title">Galería de <span class="text-gradient">Fotos</span></h1>
+      <p class="section-subtitle">Registro fotográfico de los análisis, visitas a la Planta Potabilizadora de Santa Elena, charlas y desarrollo del prototipo.</p>
+    </div>
+
+    <!-- Grid donde se generan dinámicamente las imágenes desde galeria.js -->
+    <div class="galeria-grid" id="galeriaGrid"></div>
+
+    <!-- Modal Lightbox para ampliar imagen -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <img class="lightbox-content" id="lightboxImg" alt="Imagen ampliada">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+      <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <p>Código H₂O - 6.º Año Bachiller en Programación y Robótica</p>
+    <p>Escuela Secundaria N.º 9 “Domingo Faustino Sarmiento” | La Paz, Entre Ríos</p>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="../js/main.js"></script>
+  <script src="../js/galeria.js"></script>
+</body>
+</html>
